@@ -1,28 +1,21 @@
 /* eslint-disable operator-linebreak */
-const user = {
-  name: 'ilya',
-  age: 28,
-  hobby: {
-    programming: true,
-    collection: {
-      books: ['Masodov', 'Hunter Tompson'],
-    },
-  },
-};
-
 function getProperty(object, propertyPath) {
-  if (typeof object !== 'object' || object == null) {
+  if (object === null || object === undefined || typeof object !== 'object') {
     return undefined;
   }
+
   if (typeof propertyPath !== 'string') {
     return undefined;
   }
+
   const keys = propertyPath.split('.');
   let result = object;
+
   for (let i = 0; i < keys.length; i += 1) {
     const key = keys[i];
+
     if (
-      result == null ||
+      result === null ||
       typeof result !== 'object' ||
       !result.hasOwnProperty(key)
     ) {
@@ -30,10 +23,8 @@ function getProperty(object, propertyPath) {
     }
     result = result[key];
   }
+
   return result;
 }
 
 module.exports = getProperty;
-
-console.log(getProperty(user, 'hobby.collection.city'));
-console.log(getProperty(user, 'hobby.collection.books'));
