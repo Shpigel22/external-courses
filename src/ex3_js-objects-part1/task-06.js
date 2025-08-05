@@ -1,6 +1,6 @@
 /* eslint-disable operator-linebreak */
 function getProperty(object, propertyPath) {
-  if (object === null || object === undefined || typeof object !== 'object') {
+  if (object === null || typeof object !== 'object') {
     return undefined;
   }
 

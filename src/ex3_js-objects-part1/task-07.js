@@ -1,7 +1,7 @@
 /* eslint-disable prefer-const */
 /* eslint-disable linebreak-style */
 function deepClone(object) {
-  if (object === null || object === undefined || typeof object !== 'object') {
+  if (object === null || typeof object !== 'object') {
     return object;
   }
 
