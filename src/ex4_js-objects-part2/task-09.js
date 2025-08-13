@@ -13,7 +13,7 @@ function setWordAfterNumber(string, word, number) {
     resultString += word;
   }
 
-  return (resultString = resultString.trim());
+  return resultString.trim();
 }
 
 module.exports = setWordAfterNumber;
