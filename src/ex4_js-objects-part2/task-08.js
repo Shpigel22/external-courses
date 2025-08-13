@@ -11,5 +11,3 @@ function setLowerCaseToString(string) {
 }
 
 module.exports = setLowerCaseToString;
-
-console.log(setLowerCaseToString('  я так не думаю  '));
