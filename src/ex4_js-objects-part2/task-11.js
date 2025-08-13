@@ -1,5 +1,4 @@
-/* eslint-disable linebreak-style */
-function counterSymbol(string) {
+function countSymbol(string) {
   const counts = {};
 
   for (let i = 0; i < string.length; i += 1) {
@@ -11,4 +10,5 @@ function counterSymbol(string) {
     console.log(`${key}: ${value}`);
   });
 }
-module.exports = counterSymbol;
+
+module.exports = countSymbol;

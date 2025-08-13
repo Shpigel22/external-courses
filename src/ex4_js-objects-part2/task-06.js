@@ -1,14 +1,20 @@
-/* eslint-disable linebreak-style */
-function bigFirstSymbol(string) {
-  const result = string.split(' ');
+function convertToBigFirstSymbol(string) {
+  const wordsArray = string.split(' ');
   let resultString = '';
 
-  for (let i = 0; i < result.length; i += 1) {
-    result[i] = result[i][0].toUpperCase() + result[i].slice(1);
-    resultString = `${resultString + result[i]} `;
+  for (let i = 0; i < wordsArray.length; i += 1) {
+    if (wordsArray[i] === '') {
+      // eslint-disable-next-line no-continue
+      continue;
+    } else {
+      wordsArray[i] = wordsArray[i][0].toUpperCase() + wordsArray[i].slice(1);
+      resultString = `${resultString}${wordsArray[i]} `;
+    }
   }
 
   resultString = resultString.trim();
+
   return resultString;
 }
-module.exports = bigFirstSymbol;
+
+module.exports = convertToBigFirstSymbol;

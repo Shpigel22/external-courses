@@ -1,7 +1,7 @@
-/* eslint-disable linebreak-style */
-function randomNumber() {
-  // eslint-disable-next-line prefer-const
-  let result = Math.random(0, 100);
-  return result;
+function getRandomNumber() {
+  return Math.floor(Math.random() * 101);
 }
-module.exports = randomNumber;
+
+module.exports = getRandomNumber;
+
+console.log(getRandomNumber());

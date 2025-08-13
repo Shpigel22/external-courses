@@ -1,7 +1,5 @@
-/* eslint-disable linebreak-style */
-function randomBoldNumber(min, max) {
-  // eslint-disable-next-line prefer-const
-  let result = min + Math.random() * (max - min + 1);
-  return Math.floor(result);
+function getRandomInteger(min, max) {
+  return Math.floor(min + Math.random() * (max - min + 1));
 }
-module.exports = randomBoldNumber;
+
+module.exports = getRandomInteger;

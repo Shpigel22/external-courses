@@ -1,9 +1,9 @@
-/* eslint-disable linebreak-style */
-function bigFirstSymbol(string) {
-  const result = string[0].toUpperCase() + string.slice(1);
+function convertBigFirstSymbol(string) {
+  if (string === '') {
+    return string;
+  }
 
-  result.trim();
-
-  return result;
+  return string[0].toUpperCase() + string.slice(1);
 }
-module.exports = bigFirstSymbol;
+
+module.exports = convertBigFirstSymbol;

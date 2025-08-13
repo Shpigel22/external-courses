@@ -1,14 +1,12 @@
-/* eslint-disable linebreak-style */
-function compression(string, number) {
-  // eslint-disable-next-line prefer-const
+function сompressString(string, number) {
   let result = string;
 
-  if (string.length > number) {
-    result = `${string.slice(0, number - 1)}\u2026`;
+  if (string.length <= number) {
     return result;
   }
 
-  return string;
+  result = `${string.slice(0, number - 1)}…`;
+  return result;
 }
 
-module.exports = compression;
+module.exports = сompressString;

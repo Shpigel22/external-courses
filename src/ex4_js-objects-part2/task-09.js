@@ -1,20 +1,19 @@
-/* eslint-disable linebreak-style */
-function stringInjection(string, word, number) {
-  const result = string.split(' ');
+function setWordAfterNumber(string, word, number) {
+  const arrayWord = string.split(' ');
   let resultString = '';
 
-  for (let i = 0; i < result.length; i += 1) {
-    resultString += `${result[i]} `;
+  for (let i = 0; i < arrayWord.length; i += 1) {
+    resultString += `${arrayWord[i]} `;
     if (i === number) {
       resultString += `${word} `;
     }
   }
 
-  if (number >= result.length) {
+  if (number >= arrayWord.length) {
     resultString += word;
   }
-  resultString = resultString.trim();
-  return resultString;
+
+  return (resultString = resultString.trim());
 }
 
-module.exports = stringInjection;
+module.exports = setWordAfterNumber;

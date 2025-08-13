@@ -1,9 +1,9 @@
-/* eslint-disable linebreak-style */
-function searchMatch(firstString, secondString) {
-  if (firstString.indexOf(secondString) !== -1) {
+function checkMatch(firstString, secondString) {
+  if (firstString.toLowerCase().includes(secondString.toLowerCase())) {
     return true;
   }
 
   return false;
 }
-module.exports = searchMatch;
+
+module.exports = checkMatch;
