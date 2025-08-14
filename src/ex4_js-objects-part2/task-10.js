@@ -1,4 +1,4 @@
-function stringReverse(string) {
+function reversedString(string) {
   const result = string.split('');
   let resultString = '';
 
@@ -9,4 +9,4 @@ function stringReverse(string) {
   return resultString;
 }
 
-module.exports = stringReverse;
+module.exports = reversedString;

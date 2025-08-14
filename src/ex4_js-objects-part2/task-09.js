@@ -4,6 +4,7 @@ function setWordAfterNumber(string, word, number) {
 
   for (let i = 0; i < arrayWord.length; i += 1) {
     resultString += `${arrayWord[i]} `;
+
     if (i === number) {
       resultString += `${word} `;
     }

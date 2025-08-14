@@ -1,5 +1,5 @@
 function convertBigFirstSymbol(string) {
-  if (string === '') {
+  if (!string) {
     return string;
   }
 

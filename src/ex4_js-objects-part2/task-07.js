@@ -6,6 +6,7 @@ function сompressString(string, number) {
   }
 
   result = `${string.slice(0, number - 1)}…`;
+
   return result;
 }
 
