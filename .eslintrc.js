@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'airbnb-base'],
+  extends: ['eslint:recommended', 'airbnb-base', 'Prettier'],
   env: {
     browser: true,
     node: true,
@@ -11,6 +11,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'prefer-const': 0,
+    'linebreak-style': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     'max-classes-per-file': 0,
@@ -67,7 +69,10 @@ module.exports = {
     'no-useless-call': 0,
     'no-useless-concat': 0,
     'no-void': 0,
-    'no-warning-comments': [0, { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [
+      0,
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+    ],
     'no-with': 2,
     radix: 2,
     'vars-on-top': 0,
