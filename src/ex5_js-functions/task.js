@@ -4,6 +4,8 @@ function Calculator() {
   function add(number) {
     if (number !== undefined) {
       storageValue += number;
+    } else {
+      return add;
     }
 
     return function nextAdd(nextNumber) {
@@ -18,6 +20,8 @@ function Calculator() {
   function subtract(number) {
     if (number !== undefined) {
       storageValue -= number;
+    } else {
+      return subtract;
     }
 
     return function nextSubtract(nextNumber) {
@@ -36,6 +40,8 @@ function Calculator() {
       } else {
         storageValue /= number;
       }
+    } else {
+      return divide;
     }
 
     return function nextDivide(nextNumber) {
@@ -54,6 +60,8 @@ function Calculator() {
   function multiply(number) {
     if (number !== undefined) {
       storageValue *= number;
+    } else {
+      return multiply;
     }
 
     return function nextMultiply(nextNumber) {
