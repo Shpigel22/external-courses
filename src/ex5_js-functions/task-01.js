@@ -30,21 +30,21 @@ function Calculator() {
   }
 
   function divide(number) {
-    if (number === 0) {
-      console.log('Делить на нуль нельзя!');
-    }
-
     if (number !== undefined) {
-      storageValue /= number;
+      if (number === 0) {
+        console.log('Делить на нуль нельзя!');
+      } else {
+        storageValue /= number;
+      }
     }
 
     return function nextDivide(nextNumber) {
-      if (nextNumber === 0) {
-        console.log('Делить на нуль нельзя!');
-      }
-
       if (nextNumber !== undefined) {
-        storageValue /= nextNumber;
+        if (nextNumber === 0) {
+          console.log('Делить на нуль нельзя!');
+        } else {
+          storageValue /= nextNumber;
+        }
       }
 
       return nextDivide;
