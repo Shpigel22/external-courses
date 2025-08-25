@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'airbnb-base', 'Prettier'],
+  extends: ['eslint:recommended', 'airbnb-base', 'prettier'],
   env: {
     browser: true,
     node: true,
@@ -11,7 +11,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prefer-const': 0,
+    'prefer-const': 1,
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
