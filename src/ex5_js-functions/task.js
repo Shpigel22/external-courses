@@ -4,33 +4,17 @@ function Calculator() {
   function add(number) {
     if (number !== undefined) {
       storageValue += number;
-    } else {
-      return add;
     }
 
-    return function nextAdd(nextNumber) {
-      if (nextNumber !== undefined) {
-        storageValue += nextNumber;
-      }
-
-      return nextAdd;
-    };
+    return add;
   }
 
   function subtract(number) {
     if (number !== undefined) {
       storageValue -= number;
-    } else {
-      return subtract;
     }
 
-    return function nextSubtract(nextNumber) {
-      if (nextNumber !== undefined) {
-        storageValue -= nextNumber;
-      }
-
-      return nextSubtract;
-    };
+    return subtract;
   }
 
   function divide(number) {
@@ -40,37 +24,17 @@ function Calculator() {
       } else {
         storageValue /= number;
       }
-    } else {
-      return divide;
     }
 
-    return function nextDivide(nextNumber) {
-      if (nextNumber !== undefined) {
-        if (nextNumber === 0) {
-          console.log('Делить на нуль нельзя!');
-        } else {
-          storageValue /= nextNumber;
-        }
-      }
-
-      return nextDivide;
-    };
+    return divide;
   }
 
   function multiply(number) {
     if (number !== undefined) {
       storageValue *= number;
-    } else {
-      return multiply;
     }
 
-    return function nextMultiply(nextNumber) {
-      if (nextNumber !== undefined) {
-        storageValue *= nextNumber;
-      }
-
-      return nextMultiply;
-    };
+    return multiply;
   }
 
   function getResult() {
@@ -82,6 +46,7 @@ function Calculator() {
 
     return storageValue;
   }
+
   return {
     add,
     subtract,
@@ -92,6 +57,6 @@ function Calculator() {
   };
 }
 
-const сalculator = Calculator();
+const calculator = Calculator();
 
-module.exports = сalculator;
+module.exports = calculator;
