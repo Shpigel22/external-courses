@@ -1,11 +1,7 @@
 function sliced(array, begin, end) {
-  if (!Array.isArray(array)) {
-    return [];
-  }
-
   const result = [];
-  let start = begin === undefined ? 0 : begin;
-  let finish = end === undefined ? array.length : end;
+  let start = begin ?? 0;
+  let finish = end ?? array.length;
 
   if (begin < 0) {
     start = array.length + begin;
@@ -17,11 +13,7 @@ function sliced(array, begin, end) {
 
   start = Math.max(start, 0);
   finish = Math.min(finish, array.length);
-  finish = Math.max(finish, 0);
-
-  if (start < 0 || finish < 0 || start >= finish) {
-    return [];
-  }
+  finish = Math.max(finish, start);
 
   for (let i = start; i < finish; i += 1) {
     result.push(array[i]);

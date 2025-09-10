@@ -1,14 +1,6 @@
 function reduced(array, callback, initialValue) {
-  let previousValue;
-  let i;
-
-  if (initialValue === undefined) {
-    previousValue = array[0];
-    i = 1;
-  } else {
-    previousValue = initialValue;
-    i = 0;
-  }
+  let previousValue = initialValue === undefined ? array[0] : initialValue;
+  let i = initialValue === undefined ? 1 : 0;
 
   for (i; i < array.length; i += 1) {
     const currentItem = array[i];
