@@ -1,0 +1,38 @@
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    background-color: blueviolet;
+    opacity: 0.5;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+
+#spisok {
+    background-size: contain;
+    background-image: url(/src/ex7_html-css-basics/barin.jpg);
+    background-repeat: no-repeat;
+}
+
+table {
+    background-color: blue;
+}
+
+.list {
+    background-color: brown;
+}
+
+@font-face {
+    font-family: 'myCustomFont';
+    src: url(/src/ex7_html-css-basics/saira-thin.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#hat {
+    font-family: 'myCustomFont', Arial, sans-serif;
+}
