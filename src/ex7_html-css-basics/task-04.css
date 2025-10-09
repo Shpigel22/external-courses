@@ -9,27 +9,4 @@
     font-size: 16px;
 }
 
-ul, ol {
-    padding-left: 40px;
-}
-
-dl {
-    margin: 1em 0;
-}
-
-dt {
-    margin-top: 0.5em;
-}
-
-dd {
-    margin-left: 40px;
-    margin-bottom: 0.5em;
-}
-
-@font-face {
-    font-family: 'myCustomFont';
-    src: url(/src/ex7_html-css-basics/saira-thin.woff2);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url('task-04.01.css');
