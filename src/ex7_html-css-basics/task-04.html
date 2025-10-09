@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="task-04.css" />
     <style>
+      @import url('task-04.css');
       .h2 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
@@ -31,9 +32,13 @@
       .header {
         font-family: 'myCustomFont', Arial, sans-serif;
       }
+      .body {
+        text-transform: capitalize;
+        white-space: nowrap;
+      }
     </style>
   </head>
-  <body>
+  <body class="body">
     <h1 class="header">HTML Basic</h1>
     <h2 class="h2">List</h2>
     <h2 class="h2">Order List</h2>
@@ -67,16 +72,19 @@
       <h2 class="h2">Nested list</h2>
       <ul>
         <li>List item one</li>
-        <li>List item two with subitems
-        <ul>
-          <li>Subitem 1</li>
+        <li>
+          List item two with subitems
           <ul>
-            <li>Susubbitem 1</li>
-            <li>Susubbitem 2</li>
+            <li>
+              Subitem 1
+              <ul>
+                <li>Susubbitem 1</li>
+                <li>Susubbitem 2</li>
+              </ul>
+            </li>
+            <li>Subitem 2</li>
           </ul>
-          </li>
-          <li>Subitem 2</li>
-        </ul>
+        </li>
         <li>Final last item</li>
       </ul>
     </div>
@@ -122,8 +130,8 @@
     <table>
       <thead>
         <tr>
-          <th><b>First Name</b></th>
-          <th><b>Last Name</b></th>
+          <th>First Name</th>
+          <th>Last Name</th>
         </tr>
       </thead>
       <tbody>
@@ -144,10 +152,10 @@
     <h2>Pre Tag</h2>
     <pre>
  if (time = 20) {
-    greeting = "Good day";   
- } esle {
-    greeting = "Good evening";
- }</pre
-    >
+ greeting = "Good day";   
+ } else {
+ greeting = "Good evening";
+ }   
+    </pre>
   </body>
 </html>
