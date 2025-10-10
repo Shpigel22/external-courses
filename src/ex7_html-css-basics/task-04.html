@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task-04.css" />
+    <style>
+      .h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        background-color: blueviolet;
+        opacity: 0.5;
+      }
+      .p {
+        font-family: sans-serif;
+        font-size: 0.7em;
+        text-align: left;
+      }
+      .spisok {
+        background-size: contain;
+        background-image: url(barin.jpg);
+        background-repeat: no-repeat;
+      }
+      .table {
+        background-color: blue;
+      }
+      .list {
+        background-color: brown;
+      }
+      .header {
+        font-family: 'myCustomFont', Arial, sans-serif;
+      }
+      .body {
+        text-transform: capitalize;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1 class="header">HTML Basic</h1>
+    <h2 class="h2">List</h2>
+    <h2 class="h2">Order List</h2>
+    <ol>
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+      <li>fourth item</li>
+      <li>five item</li>
+    </ol>
+    <h2 class="h2">Unordered List</h2>
+    <ul class="spisok">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+    </ul>
+    <div style="background-color: green">
+      <h2>Description List</h2>
+      <dl>
+        <dt>Name</dt>
+        <dd>Godzilla</dd>
+        <dt>Born</dt>
+        <dd>1952</dd>
+        <dt>Birthplace</dt>
+        <dd>Japan</dd>
+        <dt>Color</dt>
+        <dd>Green</dd>
+      </dl>
+      <h2 class="h2">Nested list</h2>
+      <ul>
+        <li>List item one</li>
+        <li>
+          List item two with subitems
+          <ul>
+            <li>
+              Subitem 1
+              <ul>
+                <li>Susubbitem 1</li>
+                <li>Susubbitem 2</li>
+              </ul>
+            </li>
+            <li>Subitem 2</li>
+          </ul>
+        </li>
+        <li>Final last item</li>
+      </ul>
+    </div>
+    <h2 class="h2">List with links</h2>
+    <ul class="list">
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/li">Home</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/li">News</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/li">Contact</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Reference/Elements/li">About</a>
+      </li>
+    </ul>
+    <hr />
+    <h2 class="h2">Paragraphs</h2>
+    <p class="p">
+      В современном мире технологии стремительно меняют не только способы общения, но и само
+      восприятие реальности. Люди всё чаще полагаются на цифровые устройства в повседневной жизни —
+      от навигации по городу до управления финансами. Искусственный интеллект и машинное обучение
+      проникают в самые разные сферы: медицину, образование, транспорт. <br />
+      <br />
+      Однако вместе с удобством приходят и вызовы — вопросы приватности, этики и цифрового
+      неравенства становятся всё более актуальными.<br />
+      Не каждый имеет равный доступ к новым технологиям, что может усиливать социальное
+      расслоение.<br />
+      В то же время образование и просвещение помогают людям адаптироваться к переменам и
+      использовать инновации с пользой. <br />Важно помнить, что технологии — лишь инструмент, а их
+      ценность определяется тем, как мы их применяем. Гармоничное сосуществование человека и техники
+      возможно только при осознанном подходе.<br />
+      Будущее формируется сегодняшними решениями разработчиков, пользователей и законодателей.<br />
+      Поэтому критическое мышление и цифровая грамотность становятся неотъемлемыми навыками XXI
+      века. <br />Мы стоим на пороге эпохи, где человеческие ценности должны идти в ногу с
+      техническим прогрессом.<br />
+      Только так можно построить общество, в котором технологии служат людям, а не наоборот.
+    </p>
+    <hr />
+    <h2 class="h2">Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2 class="h2">Image</h2>
+    <img src="cat.png" alt="Котик" style="width: 200px; height: 150px" />
+    <hr />
+    <h2>Pre Tag</h2>
+    <pre>
+ if (time = 20) {
+ greeting = "Good day";   
+ } else {
+ greeting = "Good evening";
+ }   
+    </pre>
+  </body>
+</html>
