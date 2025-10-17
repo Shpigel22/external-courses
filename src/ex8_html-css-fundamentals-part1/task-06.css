@@ -1,0 +1,71 @@
+body {
+    height: 100%;
+}
+
+.border {
+    margin: auto;
+    align-content: center;
+    border: 1px solid grey;
+    width: 192px;
+    height: 52px;
+    border-radius: 17px;
+}
+
+.ramka {
+    margin: auto;
+    width: 180px;
+    height: 40px;
+    border: 5px solid rgb(80, 80, 80);
+    border-color: grey;
+    border-radius: 15px;
+}
+
+.checkout::before,
+.checkout::after {
+    content: "\2605";
+    display: inline-block;
+    scale: 1.4;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.checkout::before {
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.checkout::after {
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.checkout {
+    cursor: pointer;
+    font-size: 18px;
+    margin: auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px;
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+}
+
+.insideButton {
+    color: black;
+}
+
+button:active {
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0;
+}
