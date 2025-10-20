@@ -1,0 +1,49 @@
+.field {
+    margin: auto;
+    display: grid;
+    gap: 10px;
+}
+
+.firstDiv, .secondDiv, .thirdDiv, .seconOrderDiv, .thirdOrderDiv, .thirdOrderDiv::before, .thirdOrderDiv::after {
+    width: 150px;
+    height: 100px;
+    background-color: #60b88d;
+}
+
+.thirdOrderDiv::before,
+.thirdOrderDiv::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.secondDiv {
+    transform: translate(3px, 3px);
+    opacity: 0.7;
+}
+
+.thirdDiv {
+    transform: translate(3px, 3px);
+    opacity: 0.5;
+}
+
+.seconOrderDiv {
+    box-shadow:
+        3px 3px 0 rgba(96, 184, 141, 0.7),
+        6px 6px 0 rgba(96, 184, 141, 0.5);
+}
+
+.thirdOrderDiv::before {
+    transform: translate(3px, 3px);
+    opacity: 0.7;
+}
+
+.thirdOrderDiv {
+    position: relative;
+}
+
+.thirdOrderDiv::after {
+    transform: translate(6px, 6px);
+    opacity: 0.5;
+}
