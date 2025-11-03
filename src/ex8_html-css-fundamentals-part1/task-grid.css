@@ -9,6 +9,7 @@ header {
 
 section {
     grid-column: 1 / -1;
+    grid-row: 2;
     background: lightgreen;
     width: 75%;
 }
@@ -21,6 +22,8 @@ article {
 aside {
     background: pink;
     grid-column: 2;
+    grid-row: 2;
+    margin-left: 2rem;
 }
 
 header, article, section, .module {
